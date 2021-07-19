@@ -13,7 +13,7 @@ func Push_to_logfile(message string) error {
 	_, err := os.Stat("./log.txt")
 
 	if err != nil {
-		file, err := os.OpenFile("./log.txt", os.O_CREATE|os.O_APPEND, 0666) //os.Create("./log.txt")
+		file, err := os.OpenFile("./log.txt", os.O_CREATE|os.O_APPEND, 0644) //os.Create("./log.txt")
 		if err != nil {
 			return selferrors.WrapWrongRecordingError(
 				fmt.Errorf("Do not create Logfile %w", err),
