@@ -1,7 +1,14 @@
 package main
 
+import (
+	"fmt"
+
+	"github.com/qdrow-tch/errors_workout/logging"
+)
+
 func main() {
-
-	var some_err selferrors.Wrong_recording
-
+	err := logging.Push_to_logfile("ffffffff")
+	if err != nil {
+		fmt.Println("erroorrrrr")
+	}
 }

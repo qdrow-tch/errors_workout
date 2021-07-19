@@ -1,4 +1,4 @@
-package errors_workout
+package selferrors
 
 import (
 	"fmt"
