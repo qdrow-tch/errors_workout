@@ -18,6 +18,6 @@ func main() {
 	}()
 
 	for i, vl := range mass {
-		fmt.Printf("%d: %d / %d = %f \n", i+1, value, vl, value/vl)
+		fmt.Printf("%d: %d / %d = %f \n", i+1, value, vl, float64(value/vl))
 	}
 }
