@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/qdrow-tch/errors_workout/logging"
+	"github.com/qdrow-tch/errors_workout/v2/qdtask"
 )
 
 func main() {
@@ -20,4 +21,6 @@ func main() {
 	for i, vl := range mass {
 		fmt.Printf("%d: %d / %d = %f \n", i+1, value, vl, float64(value/vl))
 	}
+
+	qdtask.SayHi()
 }
