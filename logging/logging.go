@@ -1,3 +1,4 @@
+//logging это вспомогательный пакет который позволяет вести логирование исполнения кода
 package logging
 
 import (
@@ -8,6 +9,7 @@ import (
 	"github.com/qdrow-tch/errors_workout/selferrors"
 )
 
+//Это основная функция логирования, работает по принципу создания или открытия уже имеющегося фала log.txt и записи в него очередной переданной в функцию строчки.
 func Push_to_logfile(message string) error {
 
 	_, err := os.Stat("./log.txt")
